@@ -6,3 +6,12 @@ CREATE SEQUENCE seq_post
        CACHE 1
        NO CYCLE;
 COMMIT;
+
+DROP SEQUENCE IF EXISTS seq_user;
+
+CREATE SEQUENCE seq_post
+       INCREMENT BY 1
+       MINVALUE 1
+       CACHE 1
+       NO CYCLE;
+COMMIT;
