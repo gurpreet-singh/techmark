@@ -85,6 +85,7 @@ public class EntityManagerConfig {
         jpaProperties.put("hibernate.connection.autoReconnectForPools", true);
         jpaProperties.put("hibernate.dialect", env.getProperty("com.techmark.spring.jpa.properties.hibernate.dialect"));
         jpaProperties.put("hibernate.show_sql", env.getProperty("hibernate.show_sql"));
+
         if ( !StringUtils.isEmpty(env.getProperty("hibernate.hbm2ddl.auto"))) {
             jpaProperties.put("hibernate.hbm2ddl.auto", env.getProperty("hibernate.hbm2ddl.auto"));
         }
